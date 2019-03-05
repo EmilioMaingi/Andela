@@ -6,6 +6,6 @@ class BankAccount:
         self.balance += amount
         return self.balance
     
-    def withdraw(self, amount):
+    def __withdraw(self, amount):
         self.balance -= amount
         return self.balance

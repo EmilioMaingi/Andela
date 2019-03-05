@@ -4,7 +4,7 @@ class Mission:
     self.bullets = int(bullets)
     self.dragons = 50
   
-  def goToWar(self):
+  def __goToWar(self):
     reqBullets = self.dragons * 2
     if reqBullets > self.bullets:
       self.status = False
