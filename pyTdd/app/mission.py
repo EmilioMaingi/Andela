@@ -2,9 +2,9 @@ import random
 class Mission:
   def __init__(self, bullets):
     self.bullets = int(bullets)
-    self.dragons = 50
+    self.dragons = 42
   
-  def __goToWar(self):
+  def goToWar(self):
     reqBullets = self.dragons * 2
     if reqBullets > self.bullets:
       self.status = False
@@ -17,7 +17,6 @@ class Mission:
       return 'Mission won'
     else:
       return 'Mission failed'
-
 
   def getStatusToString(self):
     return '{}: There were {} dragons in the castle'.format(self.getStatus(), self.dragons)
